@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Abel');
+
+.navbar-custom {
+    background-color: #537c8e !important;
+    left: 0;
+    top: 0;
+    height: 10vh;
+    z-index: 1;
+    border-bottom: 4px solid #2ebdbd;
+    width:100%;
+}
+/* Weird bug fix that didn't display links on dropdowns */
+@media only screen and (max-width: 770px) {
+    .navbar-custom {
+      height:100%;
+    }
+  }
+/* change the brand and text color */
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: #eff1e4;
+    text-transform: uppercase;
+    font-family: 'Abel', sans-serif;
+
+}
+.navbar-custom .navbar-toggler {
+    border:none;
+}
+/* Create a "push" feeling to the burger */
+.navbar-custom .navbar-toggler:active {
+    font-size: 1rem;
+}
+.navbar-custom .navbar-toggler-icon{
+    background-image: url(
+        "data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#2ebdbd' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+/* change the link color */
+.navbar-custom .navbar-nav .nav-link {
+    color: #eff1e4;
+}
+.navbar-custom .navbar-nav .nav-link:hover{
+    color:#ceae7f;
+}
+
+.navbar-light .navbar-nav .nav-link.active{
+    color: #ceae7f;
+}

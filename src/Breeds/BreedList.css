@@ -1,0 +1,58 @@
+.breed-list {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+/* overide bootstrap default styling */
+
+.form-control {
+    background: #eff1e4;
+    margin: 0 auto;
+    border-radius: 200px;
+    width: 300px;
+    padding: 10px 10px;
+    text-align: center;
+    color: #537c8e !important;
+    border: none !important;
+    box-shadow: 2px 2px#537c8e;
+}
+
+.form-control:focus {
+    background: #eff1e4;
+    text-align: center;
+    color: #537c8e !important;
+    border: none !important;
+}
+
+/* additional styling to mybtn in app/app.css */
+
+#breed-item-btn {
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* heading for number of cats matched */
+
+.breed-counter {
+    text-transform: uppercase;
+    padding-top: 10px;
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #537c8e;
+    text-align: center;
+    text-shadow: 0.5px 0.5px #eff1e4;
+}
+/* Make mobile first, spread full width */
+
+@media only screen and (max-width: 770px) {
+    .breed-list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .breed-counter{
+        font-size:1.2rem;
+    }
+}

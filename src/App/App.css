@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+.App {
+    font-family: 'Nunito', sans-serif;
+    color: #537c8e;
+}
+
+body {
+    background-color: #ceae7f;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 4rem;
+    text-shadow: 1px 1px white;
+}
+
+p {
+    color: #eff1e4;
+    font-size: 1.2rem;
+}
+
+/* Button styling */
+
+.mybtn {
+    margin-left: 5px;
+    margin-top: 5px;
+    background: #537c8e;
+    color: #eff1e4;
+    box-shadow: 1px 1px white;
+}
+
+.mybtn:hover {
+    background: #eff1e4;
+    color: #537c8e;
+    box-shadow: 1px 1px #537c8e;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 770px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+}

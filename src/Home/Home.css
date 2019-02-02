@@ -1,0 +1,38 @@
+.modal-content {
+    background: transparent;
+    border: none;
+    width: auto;
+}
+
+.modal-header {
+    border: none;
+}
+
+.modal-footer {
+    border: none;
+    padding: 0px;
+}
+
+.modal-body {
+    padding: 0px;
+}
+
+/* CSS Grid is wonderful */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: 300px;
+    grid-template-areas: "a a" "a a";
+    /* border: solid 2px red; */
+}
+
+.grid-item {
+    text-align: center;
+    grid-area: a;
+    justify-self: center;
+    align-self: center;
+    /* Used borders to see my styling changes */
+    /* border: solid 2px red; */
+}
